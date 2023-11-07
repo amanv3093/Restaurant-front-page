@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food-Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://drive.google.com/uc?export=view&id=1vHe4Ct-qeYuMvQTpfE7w-A_GWkCVVDl_);
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+           
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(20, 20, 20);
+            align-items: center;
+            margin: auto;
+            padding: 0px 73px;
+            height: 110px;
+        }
+        .logo{
+            width: 150px;
+            cursor: pointer;
+
+        }
+        .navbar ul li{
+            display: inline-block;
+            margin: 0px 20px;
+            list-style: none;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            font-weight: 500;
+            color: gray;
+            font-size: 19px
+        }
+        .home{
+            background-color: rgb(252, 190, 99);
+            width: 69px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+        }
+        .navbar ul li::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            left: 0;
+            bottom: -10px;
+            background: white;
+            position: absolute;
+            transition:0.5s;
+        }
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+        .contain{
+            width: 100%;
+            text-align: center;
+            top: 30%;
+            position: absolute;
+            color: white;
+        }
+        .contain h1{
+            font-size: 70px;
+        }
+        .contain p{
+            font-weight: 100;
+            margin: 20px auto;
+            line-height: 30px;
+           }
+           .contain button{
+            background-color: beige;
+            margin: 9px 17px;
+            padding: 15px 30px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            position: relative;
+            transition: 0.15s;
+
+           }
+           
+        .contain button:hover{
+            background-color: rgb(252, 190, 99);
+            font-weight: 800;
+            border: 1px solid black;
+            color: black;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <img class="logo"  src="https://drive.google.com/uc?export=view&id=1YGA8Qqvnak2cOfZUgzieSbPLXBFa6Ljn" alt="">
+            <ul>
+                <li><a href="#"><button  class="home">Home</button></a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+        <div class="contain">
+            <h1>Welcome To Our <br>  Restaurant</h1>
+            <p>See how your users experience your website in realtime or view <br>trends to see any changes in 
+            performance over time</p>
+            <button>RESERVATION</button>
+
+        </div>
+    </div>
+    
+</body>
+</html>
